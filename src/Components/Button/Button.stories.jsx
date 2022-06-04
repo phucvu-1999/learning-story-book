@@ -8,18 +8,18 @@ const ButtonStory = {
 
 export default ButtonStory;
 
-export const primary = () => {
+export const Primary = () => {
   return <Button variants="primary">Primary Button</Button>;
 };
 
-export const secondary = () => {
+export const Secondary = () => {
   return <Button variants="secondary">Secondary Button</Button>;
 };
 
-export const success = () => {
+export const Success = () => {
   return <Button variants="success">Success Button</Button>;
 };
 
-export const danger = () => {
+export const Danger = () => {
   return <Button variants="danger">Danger Button</Button>;
 };

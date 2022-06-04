@@ -8,8 +8,8 @@ const InputStory = {
 
 export default InputStory;
 
-export const small = () => <Input size="small" placeholder="Small Input" />;
-export const medium = () => <Input size="medium" placeholder="Medium Input" />;
-export const large = () => <Input size="large" placeholder="Large Input" />;
+export const Small = () => <Input size="small" placeholder="Small Input" />;
+export const Medium = () => <Input size="medium" placeholder="Medium Input" />;
+export const Large = () => <Input size="large" placeholder="Large Input" />;
 
-small.storyName = "Small Input";
+Small.storyName = "Small Input";
