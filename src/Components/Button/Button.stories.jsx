@@ -4,6 +4,9 @@ import Button from "./Button";
 const ButtonStory = {
   title: "Form/Button",
   component: Button,
+  args: {
+    children: "Button",
+  },
 };
 
 export default ButtonStory;
@@ -22,4 +25,20 @@ export const Success = () => {
 
 export const Danger = () => {
   return <Button variants="danger">Danger Button</Button>;
+};
+
+const Template = (args) => <Button {...args} />;
+
+export const PrimaryA = Template.bind({});
+
+PrimaryA.args = {
+  variants: "primary",
+  // children: "Primary Args",
+};
+
+export const SecondaryA = Template.bind({});
+
+SecondaryA.args = {
+  variants: "secondary",
+  // children: "Secondary Args",
 };
