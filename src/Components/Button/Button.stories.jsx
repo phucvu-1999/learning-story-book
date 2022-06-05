@@ -1,5 +1,4 @@
 import React from "react";
-import Center from "../Center/Center";
 import Button from "./Button";
 
 const ButtonStory = {
@@ -8,12 +7,21 @@ const ButtonStory = {
   args: {
     children: "Button",
   },
+  argTypes: {
+    onClick: {
+      actions: "clicked",
+    },
+  },
 };
 
 export default ButtonStory;
 
-export const Primary = () => {
-  return <Button variants="primary">Primary Button</Button>;
+const Theme = (args) => <Button {...args} />;
+export const Primary = Theme.bind({});
+
+Primary.args = {
+  children: "Primary Button",
+  variants: "primary",
 };
 
 export const Secondary = () => {
