@@ -7,6 +7,8 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-viewport",
     "@storybook/addon-knobs",
+    "@storybook/addon-viewport",
+    "@storybook/addon-a11y",
   ],
   framework: "@storybook/react",
   core: {
