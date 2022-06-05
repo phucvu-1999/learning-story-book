@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
+import { text, boolean } from "@storybook/addon-knobs";
 
 export default {
   title: "Chakra/Chakra UI Button",
@@ -40,4 +41,13 @@ Log.args = {
   backgroundColor: "blue",
   children: "Log Button",
   onClick: (e) => console.log("Button Clicked!!!", e),
+};
+
+export const Knobs = Theme.bind({});
+Knobs.args = {
+  color: "white",
+  variant: "solid",
+  backgroundColor: "blue",
+  children: text("children", "Knobs Button"),
+  disabled: boolean("display button", false),
 };
