@@ -32,3 +32,12 @@ Danger.args = {
   backgroundColor: "red",
   children: "Danger Button",
 };
+
+export const Log = Theme.bind({});
+Log.args = {
+  color: "white",
+  variant: "solid",
+  backgroundColor: "blue",
+  children: "Log Button",
+  onClick: (e) => console.log("Button Clicked!!!", e),
+};
